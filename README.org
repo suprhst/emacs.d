@@ -1,7 +1,10 @@
 * Emacs configuration file From Youtube Stream And some Additions
 
   + feel free to use my configuration or steal whats necessary for you from this if requires
-
+*** Make sure you have these following availabe in your system for some functionalities
+    + C compiler like gcc/mingW for compiling sqllite database for org roam(done automatically by Emacs)
+    + graphviz for orgroam graph generation
+    + texlive-latex-extra for pdf export
 
 ** Install On Linux/Mac
 
