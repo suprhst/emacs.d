@@ -1,7 +1,7 @@
 # Emacs
 Emacs configuration file From Youtube Stream And some Additions 
 * Installation For Linux/MAC
-**
+
 
 git clone https://github.com/suprhst/emacs.d.git
 
