@@ -10,10 +10,12 @@
 
    #+BEGIN_SRC bash
 
-   git clone https://github.com/suprhst/emacs.d.git
+     git clone https://github.com/suprhst/emacs.d.git
 
-   cp emacs.d/* ~/.emacs.d/
-    
+     cp emacs.d/* ~/.emacs.d/
+
+     mkdir ~/{orgroam,org}
+
    #+END_SRC
      And Restart Emacs
 ** For Windows
