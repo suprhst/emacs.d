@@ -5,6 +5,6 @@ Emacs configuration file From Youtube Stream And some Additions
    and restart emacs it will pull the packages from melpa 
 
 * Feel Free to copy my config 
-Support the packages inside the config if possible keep opensource community thriving :)
+Support the packages inside the config if possible in their respective Gits/ Pages / Websites keep opensource community thriving :)
 
 Hope you Have a Wonderful Day
