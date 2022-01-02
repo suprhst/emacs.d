@@ -377,21 +377,6 @@
 	     '(85 . 50) '(100 . 100)))))
     (global-set-key (kbd "C-c t") 'toggle-transparency)
   #+END_SRC
-* Python
-  #+BEGIN_SRC emacs-lisp
-
-    (use-package python-mode)
-    (use-package elpy)
-    (elpy-enable)
-    (add-hook 'elpy-mode-hook 'flycheck-mode)
-    (use-package py-autopep8)
-    (require 'py-autopep8)
-    (add-hook 'elpy-mode-hook 'py-autopep8-enable-on-save)
-    (use-package company-jedi)
-    (add-to-list 'company-backends 'company-jedi)
-    (add-hook 'python-mode-hook 'jedi:setup)
-    (setq jedi:complete-on-dot t)
-  #+END_SRC
 * SmartParens
  #+BEGIN_SRC emacs-lisp
    (use-package smartparens
@@ -412,4 +397,44 @@
 	     (file+headline "mysnip.org" "My Snippets")
 	     "* %^{note :} \n %? %i")))
 
+  #+END_SRC
+* LSP
+  #+BEGIN_SRC emacs-lisp
+    (use-package lsp-mode
+      :ensure t)
+    (use-package lsp-treemacs
+      :ensure t)
+    (add-hook 'c-mode-hook 'lsp)
+    (add-hook 'python-mode-hook 'lsp)
+    (with-eval-after-load 'lsp-mode
+      (add-hook 'lsp-mode-hook #'lsp-enable-which-key-integration))
+  #+END_SRC
+* Yasnippet
+  #+BEGIN_SRC emacs-lisp
+    (use-package yasnippet
+      :ensure t)
+    (yas-global-mode)
+  #+END_SRC
+* Aggressive Indent
+  #+BEGIN_SRC emacs-lisp
+    (use-package aggressive-indent
+      :ensure t)
+    (aggressive-indent-mode)
+
+  #+END_SRC
+* Undo-Tree
+  #+BEGIN_SRC emacs-lisp
+    (use-package undo-tree
+      :ensure t)
+    (undo-tree-mode)
+  #+END_SRC
+* Beacon
+  #+BEGIN_SRC emacs-lisp
+    (use-package beacon
+      :ensure t)
+    (beacon-mode)
+  #+END_SRC
+* Electric Pair
+  #+BEGIN_SRC emacs-lisp
+    (electric-pair-mode)
   #+END_SRC
