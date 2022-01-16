@@ -455,10 +455,10 @@
   #+END_SRC
 * Guide Indents
   #+BEGIN_SRC emacs-lisp
-    (use-package highlight-indent-guides
-      :ensure t)
-    (add-hook 'prog-mode-hook 'highlight-indent-guides)
-    (setq highlight-indent-guides-method 'character)
+    ;; (use-package highlight-indent-guides
+    ;;   :ensure t)
+    ;; (add-hook 'prog-mode-hook 'highlight-indent-guides)
+    ;; (setq highlight-indent-guides-method 'character)
   #+END_SRC
 * Magit
   #+BEGIN_SRC emacs-lisp
@@ -467,8 +467,8 @@
   #+END_SRC
 * Snails
   #+BEGIN_SRC emacs-lisp
-    (add-to-list 'load-path ".emacs.d/snails") ; add snails to your load-path
-    (require 'snails)
+    ;; (add-to-list 'load-path ".emacs.d/snails") ; add snails to your load-path
+    ;; (require 'snails)
 
   #+END_SRC
 * Shell-pop
